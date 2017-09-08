@@ -143,8 +143,8 @@ class ClassDefinitionResolver implements DefinitionResolver
         /** @noinspection PhpUnusedParameterInspection */
         $proxy = $this->proxyFactory->createProxy(
             $definition->getClassName(),
-            function (& $wrappedObject, $proxy, $method, $parameters2, & $initializer) use ($resolver, $definition, $parameters) {
-                $wrappedObject = $resolver->createInstance($definition, $parameters2);
+            function (& $wrappedObject, $proxy, $method, $cur_parameters, & $initializer) use ($resolver, $definition, $parameters) {
+                $wrappedObject = $resolver->createInstance($definition, $parameters);
                 $initializer = null; // turning off further lazy initialization
                 return true;
             }
