@@ -1,9 +1,9 @@
 {
-    "name": "php-di/php-di",
+    "name": "mike-koch/php-di",
     "type": "library",
-    "description": "PHP-DI is a Container that makes Dependency Injection as practical as possible in PHP",
+    "description": "PHP-DI is a Container that makes Dependency Injection as practical as possible in PHP. This fork fixes an issue in 4.x that prevented it from working in PHP 7.1.",
     "keywords": ["di", "dependency injection", "container"],
-    "homepage": "http://mnapoli.github.com/PHP-DI/",
+    "homepage": "https://github.com/mike-koch/PHP-DI/",
     "license": "MIT",
     "autoload": {
         "psr-4": {
